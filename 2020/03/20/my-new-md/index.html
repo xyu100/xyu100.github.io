@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Markdown快速入门 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文以bilibili视频“二十分钟精通排版神器Markdown”为蓝本，逐步学习并输入字符和代码，适合我 这样的小白从零开始逐步上手，并且学会很多强大的功能 记不住时只要重新翻看一下即可。视频地址：本文视频地址 | 1、代码块：12&#x2F;&#x2F;代码块语法：​&#96;&#96;&#96;java(python等等，有联想功能)  1.java代码 输入字符： &#96;&#96;&#96;java package com.yrp.po: import">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown快速入门">
+<meta property="og:url" content="http://yoursite.com/2020/03/20/my-new-md/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文以bilibili视频“二十分钟精通排版神器Markdown”为蓝本，逐步学习并输入字符和代码，适合我 这样的小白从零开始逐步上手，并且学会很多强大的功能 记不住时只要重新翻看一下即可。视频地址：本文视频地址 | 1、代码块：12&#x2F;&#x2F;代码块语法：​&#96;&#96;&#96;java(python等等，有联想功能)  1.java代码 输入字符： &#96;&#96;&#96;java package com.yrp.po: import">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584506674976&di=55224f21a66ec7476a88fb5f0759dfd0&imgtype=0&src=http%253A%252F%252Fspider.nosdn.127.net%252F733b6046dc3d8a4a93e359d14d87bce9.jpeg">
+<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CPictures%5Cpic%5C2018_01%5C20180118_IMG_1608.JPG">
+<meta property="article:published_time" content="2020-03-20T06:30:31.000Z">
+<meta property="article:modified_time" content="2020-03-20T06:45:42.406Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584506674976&di=55224f21a66ec7476a88fb5f0759dfd0&imgtype=0&src=http%253A%252F%252Fspider.nosdn.127.net%252F733b6046dc3d8a4a93e359d14d87bce9.jpeg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-my-new-md" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/20/my-new-md/" class="article-date">
+  <time datetime="2020-03-20T06:30:31.000Z" itemprop="datePublished">2020-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Markdown快速入门
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文以bilibili视频“二十分钟精通排版神器Markdown”为蓝本，逐步学习并输入字符和代码，适合我 这样的小白从零开始逐步上手，并且学会很多强大的功能</p>
+<p>记不住时只要重新翻看一下即可。视频地址：<a href="https://www.bilibili.com/video/av35579542?t=1422" target="_blank" rel="noopener">本文视频地址</a> |</p>
+<h2 id="1、代码块："><a href="#1、代码块：" class="headerlink" title="1、代码块："></a>1、代码块：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码块语法：</span></span><br><span class="line">​```java(python等等，有联想功能)</span><br></pre></td></tr></table></figure>
+
+<p><strong>1.java代码</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```java</p>
+<p>package com.yrp.po:</p>
+<p>import javax.util.ArrayList:<br>@Entity<br>@Table(name=”t_user”)<br>public class user{}</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.yrp.po:</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.util.ArrayList:</span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span>(name=<span class="string">"t_user"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">user</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.shell脚本</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```shell</p>
+<p># java -jar blog star</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> java -jar blog star</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3.python代码</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```import time,random<br>print(randow.ranint(‘a’,’b’,’c’))<br>time.sleep(2)<br>print(‘这是我的第一篇学习markdown语法的笔记。’)</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time,random</span><br><span class="line">print(randow.ranint(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>))</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">print(<span class="string">'这是我的第一篇学习markdown语法的笔记。'</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>4.代码块</strong></p>
+<p><strong>输入字符</strong></p>
+<p>`import time,random`插入一个单选的代码块</p>
+<p><strong>显示结果：</strong></p>
+<p><code>inport time,random</code>插入一个单选的代码块</p>
+<h2 id="2、标题"><a href="#2、标题" class="headerlink" title="2、标题"></a>2、标题</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 一级标题</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 二级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## 三级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">### 四级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#### 五级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##### 六级标题</span></span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>#快捷键 “ctrl+shift+1”打开大纲</p>
+<h2 id="3-字体"><a href="#3-字体" class="headerlink" title="3.字体"></a>3.字体</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加粗</span></span><br><span class="line">**加粗**</span><br><span class="line"><span class="comment">// 代码高亮</span></span><br><span class="line">==代码高亮==</span><br><span class="line"><span class="comment">// 删除线</span></span><br><span class="line">~~删除线~~</span><br><span class="line"><span class="comment">// 斜体</span></span><br><span class="line">*斜体*</span><br><span class="line"><span class="comment">// 下划线</span></span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;（快捷键："ctrl+u"）</span><br></pre></td></tr></table></figure>
+
+<p><strong>加粗</strong></p>
+<p>==代码高亮==</p>
+<p><del>删除线</del></p>
+<p><em>斜体</em></p>
+<p><u>下划线</u>（快捷键：”ctrl+u”）</p>
+<p><strong>4.引用</strong></p>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引用语法</span></span><br><span class="line">&gt;这是最好的时代，</span><br><span class="line">&gt;&gt;也是最坏的时代;</span><br><span class="line">&gt;&gt;&gt;这是智慧的时代，</span><br><span class="line">&gt;&gt;&gt;&gt;这是愚蠢的时代;</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;这是一个信任的时期，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;这是一个怀疑的时期；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是一个光明的季节，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是一个黑暗的季节；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是希望之春，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是失望之冬；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们面前什么都有，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们面前什么也没有；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们正踏上天堂之路，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们正走向地狱之门。</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;-------《双城记》狄更斯</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<blockquote>
+<p>这是最好的时代，</p>
+<blockquote>
+<p>也是最坏的时代;</p>
+<blockquote>
+<p>——-《双城记》狄更斯</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5.分割线"></a>5.分割线</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 分割线</span></span><br><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<hr>
+<hr>
+<h2 id="6-图片插入"><a href="#6-图片插入" class="headerlink" title="6.图片插入"></a>6.图片插入</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在线图片</span></span><br><span class="line"><span class="comment">//本地图片</span></span><br><span class="line">![强大的python](https:<span class="comment">//timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1584506674976&amp;di=55224f21a66ec7476a88fb5f0759dfd0&amp;imgtype=0&amp;src=http%3A%2F%2Fspider.nosdn.127.net%2F733b6046dc3d8a4a93e359d14d87bce9.jpeg)</span></span><br><span class="line">![<span class="number">2018.1</span>于龙回头](C:\Users\Administrator\Pictures\pic\<span class="number">2018_01</span>\<span class="number">20180118</span>_IMG_1608.JPG)</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584506674976&di=55224f21a66ec7476a88fb5f0759dfd0&imgtype=0&src=http%3A%2F%2Fspider.nosdn.127.net%2F733b6046dc3d8a4a93e359d14d87bce9.jpeg" alt="强大的python"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CPictures%5Cpic%5C2018_01%5C20180118_IMG_1608.JPG" alt="2018.1于龙回头"></p>
+<h2 id="7、超链接"><a href="#7、超链接" class="headerlink" title="7、超链接"></a>7、超链接</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 超链接语法</span></span><br><span class="line">[我的github地址](https:<span class="comment">//github.com/xyu100)</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><a href="https://github.com/xyu100" target="_blank" rel="noopener">我的github地址</a></p>
+<h2 id="8、列表"><a href="#8、列表" class="headerlink" title="8、列表"></a>8、列表</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 无序列表</span></span><br><span class="line">- 目录<span class="number">1</span>（-可换成）</span><br><span class="line">- 目录<span class="number">2</span></span><br><span class="line">- 目录<span class="number">3</span>    </span><br><span class="line"><span class="comment">//有序列表</span></span><br><span class="line"><span class="number">1</span>. 目录<span class="number">1</span></span><br><span class="line"><span class="number">2</span>. 目录<span class="number">2</span></span><br><span class="line"><span class="number">3</span>. 目录<span class="number">3</span>   </span><br><span class="line"><span class="string">"右键单击，可插入复选框"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<ul>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3</li>
+</ul>
+<ol>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> </li>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h2 id="9、表格"><a href="#9、表格" class="headerlink" title="9、表格"></a>9、表格</h2><p><strong>输入字符：</strong></p>
+<p><em>快捷键：”ctrl+t”</em></p>
+<p><strong>显示结果：</strong></p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>科目</th>
+<th>成绩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>语言</td>
+<td>99</td>
+</tr>
+<tr>
+<td>李四</td>
+<td>数学</td>
+<td>100</td>
+</tr>
+<tr>
+<td>王五</td>
+<td>英语</td>
+<td>99</td>
+</tr>
+</tbody></table>
+<h2 id="10-嵌入HTML标签"><a href="#10-嵌入HTML标签" class="headerlink" title="10.嵌入HTML标签"></a>10.嵌入HTML标签</h2><h3 id="10-1嵌入百度地图"><a href="#10-1嵌入百度地图" class="headerlink" title="10.1嵌入百度地图"></a>10.1嵌入百度地图</h3><p><strong>实现步骤：</strong></p>
+<p>百度地图API地址</p>
+<p><a href="http://api.map.baidu.com/lbsapi/creatmap/index.html" target="_blank" rel="noopener">http://api.map.baidu.com/lbsapi/creatmap/index.html</a></p>
+<ol>
+<li><p>先在百度API上获取想要的地图位置，</p>
+</li>
+<li><p>然后点“获取代码”按钮，</p>
+</li>
+<li><p>弹出窗口，把代码复制下来，</p>
+</li>
+<li><p>在本地创建一个XXX.html文件，把刚才复制的代码粘贴进去，保存好，</p>
+</li>
+<li><p>编辑XXX.thml文件,在</p>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+
+</li>
+</ol>
+<p>   下面插入一行<code>&lt;meta charset-&quot;UTF-8&quot; /&gt;</code>以防止产生乱码，</p>
+<ol start="6">
+<li>然后输入以下字符。</li>
+</ol>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">"D:\仰望星空\python学习\charts\国家大剧院.html"</span></span><br><span class="line">width=<span class="string">"600"</span>  </span><br><span class="line">height=<span class="string">"300"</span> </span><br><span class="line">frameborder=<span class="string">"0"</span></span><br><span class="line">scrolling=<span class="string">"no"</span> &gt;</span><br><span class="line">&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<iframe src="D:\仰望星空\python学习\charts\国家大剧院.html"
+
+
+<h3 id="10-2嵌入视频"><a href="#10-2嵌入视频" class="headerlink" title="10.2嵌入视频"></a>10.2嵌入视频</h3><h3 id="10-2-1嵌入网络视频"><a href="#10-2-1嵌入网络视频" class="headerlink" title="10.2.1嵌入网络视频"></a>10.2.1嵌入网络视频</h3><p><strong>实现步骤：</strong></p>
+<ol>
+<li>先在视频网站上找到想嵌入的视频，</li>
+<li>然后点“分享”按钮，复制”嵌入代码”，</li>
+<li>在markdown里直接粘贴代码即可，</li>
+<li>最后设置一下视频的高度和宽度（weigh=”  “ height=”  “）</li>
+</ol>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">"//player.bilibili.com/player.html?aid=56280445&amp;cid=98358325&amp;page=1"</span> scrolling=<span class="string">"no"</span> border=<span class="string">"0"</span> frameborder=<span class="string">"no"</span> framespacing=<span class="string">"0"</span> allowfullscreen=<span class="string">"true"</span></span><br><span class="line">width="600" height="300"&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><strong>视频1：衰落、复兴！世界各国GDP历史排名</strong></p>
+<iframe src="//player.bilibili.com/player.html?aid=56280445&cid=98358325&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+width="600" height="600"> </iframe>
+
+
+<h3 id="10-1-2嵌入本地视频"><a href="#10-1-2嵌入本地视频" class="headerlink" title="10.1.2嵌入本地视频"></a>10.1.2嵌入本地视频</h3><p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;video id=<span class="string">"video"</span> controls=<span class="string">""</span> preload=<span class="string">"none"</span>&gt;</span><br><span class="line">    &lt;source id=<span class="string">"mp4"</span> src=<span class="string">"E:\迅雷下载\揭秘剑桥大学博士的24小时黄金作息.mp4"</span> type=<span class="string">"video/mp4"</span>&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong>        </p>
+<p><strong>视频2：揭秘剑桥大学博士的24小时黄金作息</strong>                                                                                                            </p>
+<video id="video" controls="" preload="none">
+    <source id="mp4" src="E:\迅雷下载\揭秘剑桥大学博士的24小时黄金作息.mp4" type="video/mp4">
+</video>
+
+<h3 id="10-1-3嵌入其他网页代码"><a href="#10-1-3嵌入其他网页代码" class="headerlink" title="10.1.3嵌入其他网页代码"></a>10.1.3嵌入其他网页代码</h3><p>可以复制微信公众号或者其他网页的代码直接粘贴进markdown里，以实现其界面风格。</p>
+<iframe src="D:\仰望星空\python学习\charts\水滴球图.html"
+frameborder="0"
+scrolling="no" 
+width="800" height="400">
+</iframe>
+
+
+
+
+<p>2020.3.18 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/20/my-new-md/" data-id="ck7zt9it40000cwnu5s324g2d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/20/github-learing/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">学习如何使用Github和Git</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/20/my-new-md/">Markdown快速入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/20/github-learing/">学习如何使用Github和Git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

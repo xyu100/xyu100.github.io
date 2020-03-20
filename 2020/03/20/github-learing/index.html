@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>学习如何使用Github和Git | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="学习如何使用Github和Git一、关于Github1、基本概念 仓库（Repository） 即项目的意思，想在github上开源一个项目，就必须要新建一个Reponsitory，仓库用来存放项目代码，每个仓库存放一个项目。  收藏（Star） 仓库主页Star按钮，意思是收藏项目的人数，收藏别人的项目是需要进入他人的项目主页。 ![your stars](D:\仰望星空\Github\your">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习如何使用Github和Git">
+<meta property="og:url" content="http://yoursite.com/2020/03/20/github-learing/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="学习如何使用Github和Git一、关于Github1、基本概念 仓库（Repository） 即项目的意思，想在github上开源一个项目，就必须要新建一个Reponsitory，仓库用来存放项目代码，每个仓库存放一个项目。  收藏（Star） 仓库主页Star按钮，意思是收藏项目的人数，收藏别人的项目是需要进入他人的项目主页。 ![your stars](D:\仰望星空\Github\your">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgithub%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%8F%98%E5%8C%96.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E4%BB%93%E5%BA%93%E4%B8%BB%E9%A1%B5.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E4%B8%8B%E8%BD%BD.png">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%B5%81%E7%A8%8B.png">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%99.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%991.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%992.jpg">
+<meta property="og:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%993.jpg">
+<meta property="article:published_time" content="2020-03-20T06:30:31.000Z">
+<meta property="article:modified_time" content="2020-03-20T06:52:32.161Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgithub%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-github-learing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/20/github-learing/" class="article-date">
+  <time datetime="2020-03-20T06:30:31.000Z" itemprop="datePublished">2020-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      学习如何使用Github和Git
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="学习如何使用Github和Git"><a href="#学习如何使用Github和Git" class="headerlink" title="学习如何使用Github和Git"></a>学习如何使用Github和Git</h1><h2 id="一、关于Github"><a href="#一、关于Github" class="headerlink" title="一、关于Github"></a>一、关于Github</h2><h3 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h3><ul>
+<li><p><strong>仓库（Repository）</strong></p>
+<p>即项目的意思，想在github上开源一个项目，就必须要新建一个Reponsitory，仓库用来存放项目代码，每个仓库存放一个项目。</p>
+</li>
+<li><p><strong>收藏（Star）</strong></p>
+<p>仓库主页Star按钮，意思是收藏项目的人数，收藏别人的项目是需要进入他人的项目主页。</p>
+<p>![your stars](D:\仰望星空\Github\your stars.jpg)</p>
+</li>
+<li><p><strong>复制or克隆项目（Fork）</strong></p>
+<p>即项目的分支（源于开源），最后可将分支合并拉取，并能看到每个分支的情况，比如代码修改量、修改人、修改时间等。fork后在分支方会产生一个与主项目<strong>相同的独立</strong>项目，但是主项目发生变化时，分支项目不变化。</p>
+</li>
+<li><p><strong>发起请求（Pull Ruquest）</strong></p>
+<p>基于fork的项目分支作了改进后，想把改进合并到主项目里，就需要发起请求（Pull Request），主项目主收到请求后会review分支的代码，测试觉得OK后，会接受这个PR，就会把分支合到主项目里。</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgithub%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg" alt="一图说明上述概念"></p>
+<p><strong>发起新的pull ruquest请求：</strong></p>
+<p>![pull request](D:\仰望星空\Github\pull request.jpg)</p>
+</li>
+<li><p><strong>关注（Watch）</strong></p>
+<p>Watch的项目如果有斜体更新，都会第一时间收到关于该项目的通知提醒。</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch.jpg" alt="watch"></p>
+<p>当被关注的人的项目有变化时：</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%8F%98%E5%8C%96.jpg" alt="watch项目变化"></p>
+</li>
+</ul>
+<ul>
+<li><p><strong>事务卡片（Issue）</strong></p>
+<p>发现代码Bug，或有其他测试问题需要讨论时用。</p>
+</li>
+<li><p><strong>Github主页</strong></p>
+<p>该页左侧主要显示用户动态以及关注用户或关注仓库的动态，右侧显示所有的git库。</p>
+</li>
+<li><p><strong>仓库主页</strong></p>
+<p>主要显示项目的信息，如项目代码、版本、收藏/关注/fork情况等。</p>
+</li>
+<li><p><strong>个人主页**</strong></p>
+<p>个人信息等。</p>
+</li>
+</ul>
+<h3 id="2、注册-sign-up-及登录-sign-in-github帐号"><a href="#2、注册-sign-up-及登录-sign-in-github帐号" class="headerlink" title="2、注册(sign up)及登录(sign in)github帐号"></a>2、注册(<code>sign up</code>)及登录(<code>sign in</code>)github帐号</h3><p><a href="github.com">github官方网址</a></p>
+<p><strong>邮箱非常重要，需要接收邮件！</strong></p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>github服务器在国外，有访问太慢或无法访问时需要 科学。</li>
+<li>github search (google helper、ssr等)。</li>
+<li>私有仓库只能自己或指定的朋友才有权操作（但是收费，所说github被微软收购后私有仓库也免费了）。</li>
+<li>QQ邮箱需要设置白名单才可以收到确认邮件。</li>
+</ol>
+<h3 id="3、创建仓库"><a href="#3、创建仓库" class="headerlink" title="3、创建仓库"></a>3、创建仓库</h3><ul>
+<li>一个仓库对应一个开源项目</li>
+<li>通过git管理这个库</li>
+</ul>
+<ol>
+<li>仓库名称 Repository name（一般使用英文，并使用项目名称）</li>
+<li>项目描述 Description(option可用中文)</li>
+<li>创建一个Readme文件 Initialize this repository with a README（需要用markdown）</li>
+</ol>
+<ul>
+<li><p>项目主页里可以<code>Edit</code>项目描述</p>
+</li>
+<li><p><code>Create new file</code>创建文件</p>
+</li>
+<li><p><code>Upload files</code>上传文件</p>
+</li>
+<li><p><code>Find file</code>搜索文件</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E4%BB%93%E5%BA%93%E4%B8%BB%E9%A1%B5.jpg" alt="仓库主页说明"></p>
+</li>
+</ul>
+<h3 id="4、仓库管理"><a href="#4、仓库管理" class="headerlink" title="4、仓库管理"></a>4、仓库管理</h3><ul>
+<li><p><strong>创建新文件（creat new file）</strong></p>
+<ul>
+<li>起名\写代码\Commit new file写说明和详细说明</li>
+<li>preview预览</li>
+</ul>
+</li>
+<li><p>上传新文件（upload files）支持选择和拖曳文件</p>
+</li>
+<li><p>查找文件（<strong>支持即输即显</strong>）</p>
+</li>
+<li><p>编辑文件</p>
+</li>
+<li><p>删除文件（信息可以在commits里查看）</p>
+</li>
+<li><p><strong>commits显示对文件的处理次数</strong></p>
+</li>
+<li><p>下载/检出项目（clone or download，git下载用内部的地址）</p>
+</li>
+</ul>
+<h3 id="5、Github-Issues"><a href="#5、Github-Issues" class="headerlink" title="5、Github Issues"></a>5、Github Issues</h3><p>  ![new issues](D:\仰望星空\Github\new issue.jpg)</p>
+<hr>
+<hr>
+<p>  ![创建新的issues](D:\仰望星空\Github\creat new issues.jpg)</p>
+<ul>
+<li>对issues项目主和分支主<strong>都可关闭</strong></li>
+</ul>
+<hr>
+<h3 id="6、开源项目贡献流程"><a href="#6、开源项目贡献流程" class="headerlink" title="6、开源项目贡献流程"></a>6、开源项目贡献流程</h3><ol>
+<li><p>方式1：新建Issue</p>
+<p>对项目主提交使用问题或建议和想法。</p>
+</li>
+<li><p>方式2：Pull Request</p>
+<p>直接修改、完善主项目的代码。</p>
+<ul>
+<li>fork项目</li>
+<li>修改自己仓库的项目代码</li>
+<li>新建Pull Ruquest</li>
+<li>等待项目主审核</li>
+</ul>
+</li>
+</ol>
+<h2 id="二、学习Git"><a href="#二、学习Git" class="headerlink" title="二、学习Git"></a>二、学习Git</h2><h3 id="1、目的："><a href="#1、目的：" class="headerlink" title="1、目的："></a>1、目的：</h3><p>通过Git管理Github托管项目代码</p>
+<h3 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h3><ol>
+<li><p>官网下载：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E4%B8%8B%E8%BD%BD.png" alt="git下载"></p>
+</li>
+<li><p>安装：</p>
+<ul>
+<li>Git Bash Here:命令行模式</li>
+<li>Git GUI Here:图文界面模式</li>
+<li>Use Git from Git Bash only:选择使用命令行模式</li>
+</ul>
+</li>
+</ol>
+<h3 id="3、Git工作流程"><a href="#3、Git工作流程" class="headerlink" title="3、Git工作流程"></a>3、Git工作流程</h3><h3 id="4、Git初始化及仓库创建和操作"><a href="#4、Git初始化及仓库创建和操作" class="headerlink" title="4、Git初始化及仓库创建和操作"></a>4、Git初始化及仓库创建和操作</h3><ol>
+<li><p><strong>基本信息设置</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：在主文件夹(例如new)里右击，然后点击Git Bash Here进入命令行模式</span></span><br><span class="line"><span class="comment">//第2步：设置用户名</span></span><br><span class="line">git config --global user.name <span class="string">'github的用户名'</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//第3步：设置用户邮箱</span></span><br><span class="line">git config --global user.email <span class="string">'XXX@XXX.com'</span></span><br><span class="line"><span class="comment">//以上的设置会在github主页显示信息</span></span><br><span class="line"><span class="comment">//如果选择Git GUI Here即进入图形化界面模式</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p><strong>初始化一个新的Git仓库</strong></p>
+<ul>
+<li><p>在主文件夹new里<strong>创建新的文件夹</strong>，例如命名为test</p>
+</li>
+<li><p><code>cd test\git init</code>或者在test文件夹上右击选择“Git 在这里创建版本库”<strong>完成初始化</strong>之后，会在test文件夹下生成一个.git的隐藏文件。</p>
+<p>​    <img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6.png" alt=""></p>
+</li>
+</ul>
+<ol start="3">
+<li><p><strong>向仓库中添加文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：先在工作区里创建文件</span></span><br><span class="line"><span class="comment">//命令行模式</span></span><br><span class="line">touch XXX.XX  <span class="comment">//新建一个文件</span></span><br><span class="line"><span class="comment">//窗口模式，使用用传统windows操作模式</span></span><br><span class="line"><span class="comment">//可以先查看文件状态</span></span><br><span class="line">git status</span><br><span class="line"><span class="comment">//第2步：从工作区向暂存区添加文件</span></span><br><span class="line">git add XXX.XX</span><br><span class="line"><span class="comment">//这时用git status命令查看文件状态，就会看到文件状态和颜色会发生变化     </span></span><br><span class="line">git status</span><br><span class="line"><span class="comment">//第3步：从暂存区向仓库添加文件</span></span><br><span class="line">git commit -m<span class="string">"提交描述"</span></span><br><span class="line"><span class="comment">//再查看文件状态</span></span><br><span class="line">git status <span class="comment">//这时会发现nothing to commit,working directory clean</span></span><br></pre></td></tr></table></figure>
+
+<p>4.<strong>修改文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第1步：修改文件需要键入下列命令</span></span><br><span class="line">vi XXX.XX  #或者vim XXX.XX</span><br><span class="line"><span class="comment">//或者在网页上直接修改，修改后用下面的命令就能查看文件里的代码</span></span><br><span class="line">cat XXX.XX</span><br><span class="line"><span class="comment">//这里再用git status命令查看就会发现</span></span><br><span class="line"><span class="comment">//modified XXX.XX (表示文件被修改过了)</span></span><br><span class="line"><span class="comment">//第2步：再把修改过的文件添加到仓库里就可以了</span></span><br><span class="line">git commit -m<span class="string">"描述"</span></span><br></pre></td></tr></table></figure>
+
+<p>5.<strong>删除文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：删除workshop工作区的文件,用命令行模式如下，或者在电脑里直接删除</span></span><br><span class="line">rm -rf XXX.XX</span><br><span class="line"><span class="comment">//第2步：从暂存区删除文件，方式同上</span></span><br><span class="line">git rm XXX.XX</span><br><span class="line"><span class="comment">//第3步：提交操作，同上</span></span><br><span class="line">git commit -m<span class="string">"描述"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这5个动作用一张图表示就是下面这样的 ：</strong></p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%B5%81%E7%A8%8B.png" alt="git流程"></p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="5-Git管理远程仓库"><a href="#5-Git管理远程仓库" class="headerlink" title="5.Git管理远程仓库"></a>5.Git管理远程仓库</h3><p><strong>使用远程仓库github的目的</strong></p>
+<p>作用：备份、实现代码共享集中化管理</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt=""></p>
+<h4 id="1-将本地仓库同步到远端（github）仓库"><a href="#1-将本地仓库同步到远端（github）仓库" class="headerlink" title="1. 将本地仓库同步到远端（github）仓库"></a>1. 将本地仓库同步到远端（github）仓库</h4><p>​    <strong>1.代码方法</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用命令完成提交</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>​    <strong>2.图形化界面方法</strong></p>
+<p>​    略。</p>
+<h4 id="2-Git克隆操作"><a href="#2-Git克隆操作" class="headerlink" title="2. Git克隆操作"></a>2. Git克隆操作</h4><p><strong>目的</strong></p>
+<p>将远程仓库（github对应的项目）复制/克隆到本地</p>
+<p>​    <strong>方式1、图形化界面操作</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//到github项目的主页里下载</span></span><br></pre></td></tr></table></figure>
+
+<p>![clone or download](D:\仰望星空\Github\clone or download.jpg)</p>
+<p>​    <strong>方式2：代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：复制项目的地址，见下图</span></span><br></pre></td></tr></table></figure>
+
+<p>![clone or download1](D:\仰望星空\Github\clone or download1.jpg)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第2步：输入代码完成克隆</span></span><br><span class="line">git clone <span class="string">'刚才复制的地址粘贴到这里，注意按右键才能粘贴'</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-解决git-push-报错或提示没有权限问题"><a href="#3-解决git-push-报错或提示没有权限问题" class="headerlink" title="3. 解决git push 报错或提示没有权限问题"></a>3. 解决git push 报错或提示没有权限问题</h4><p><strong>错误提示：The requested URl returned error:403 Forbidden while accessing</strong></p>
+<p>这是因为：私有项目，没有权限，输入用户名和密码，或者远程地址采用这种类型。</p>
+<p><strong>解决方法：</strong></p>
+<pre><code>1. 代码方法</code></pre><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi.git/config <span class="comment">//重新初始化</span></span><br><span class="line"><span class="comment">//把[remote"origin"]url=https://github.com/用户名/仓库名.git</span></span><br><span class="line"><span class="comment">//修改为</span></span><br><span class="line"><span class="comment">//[remote"origin"]url=用户名:密码@github.com/用户名/仓库名.git</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>图形化界面方法</p>
+<p>第1步：进入.git这个隐藏文件夹里</p>
+<p>第2步：用记事本打开config文件</p>
+<p>第3步：按代码方法的字符修改</p>
+</li>
+</ol>
+<h3 id="6-使用Github-Pages搭建个人网站"><a href="#6-使用Github-Pages搭建个人网站" class="headerlink" title="6.使用Github Pages搭建个人网站"></a>6.使用Github Pages搭建个人网站</h3><h4 id="6-1个人站点"><a href="#6-1个人站点" class="headerlink" title="6.1个人站点"></a>6.1个人站点</h4><ol>
+<li><p><strong>搭建</strong></p>
+<p><strong>第1步</strong>：来到自己的github主页</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%99.jpg" alt="建站"></p>
+<p><strong>第2步</strong>：新建仓库</p>
+<p>​    这一步没有截图，<strong>注意</strong>：仓库名必须是<strong>用户名.github.io</strong>，<strong>而且</strong>不要写<code>readme</code>文件，直接creat即可。</p>
+<p><strong>第3步</strong>：在仓库下新建index.html的文件</p>
+<p>出现大量的提示信息，别慌，点creating a new file，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%991.jpg" alt="建站1"></p>
+<p>新文件命名为index.html，在代码区里先随便写点什么，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%992.jpg" alt="建站2"></p>
+<p>描述栏里如图写上init，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%993.jpg" alt="建站3"></p>
+</li>
+</ol>
+<ol start="2">
+<li><strong>访问**</strong></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问地址</span></span><br><span class="line">https:<span class="comment">//用户名.github.io</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>注意：</strong><ul>
+<li>github pages只支持静态网页；</li>
+<li>.io仓库里只能放html文件.</li>
+</ul>
+</li>
+</ol>
+<h4 id="6-2Project-Pages项目站点"><a href="#6-2Project-Pages项目站点" class="headerlink" title="6.2Project Pages项目站点"></a>6.2Project Pages项目站点</h4><p>可以利用项目仓库里的settings\Launch automatic page generator来创建美观的项目站点，这里就不介绍了。</p>
+<p>​                                                                                                                                2020.3.19</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/20/github-learing/" data-id="ck7zttnyh0000t8nu5m0r8msl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/20/my-new-md/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Markdown快速入门
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/20/my-new-md/">Markdown快速入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/20/github-learing/">学习如何使用Github和Git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

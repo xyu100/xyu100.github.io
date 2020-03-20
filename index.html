@@ -64,6 +64,478 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-my-new-md" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/20/my-new-md/" class="article-date">
+  <time datetime="2020-03-20T06:30:31.000Z" itemprop="datePublished">2020-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/20/my-new-md/">Markdown快速入门</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文以bilibili视频“二十分钟精通排版神器Markdown”为蓝本，逐步学习并输入字符和代码，适合我 这样的小白从零开始逐步上手，并且学会很多强大的功能</p>
+<p>记不住时只要重新翻看一下即可。视频地址：<a href="https://www.bilibili.com/video/av35579542?t=1422" target="_blank" rel="noopener">本文视频地址</a> |</p>
+<h2 id="1、代码块："><a href="#1、代码块：" class="headerlink" title="1、代码块："></a>1、代码块：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码块语法：</span></span><br><span class="line">​```java(python等等，有联想功能)</span><br></pre></td></tr></table></figure>
+
+<p><strong>1.java代码</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```java</p>
+<p>package com.yrp.po:</p>
+<p>import javax.util.ArrayList:<br>@Entity<br>@Table(name=”t_user”)<br>public class user{}</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.yrp.po:</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.util.ArrayList:</span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span>(name=<span class="string">"t_user"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">user</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.shell脚本</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```shell</p>
+<p># java -jar blog star</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> java -jar blog star</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3.python代码</strong></p>
+<p><strong>输入字符：</strong></p>
+<p>```import time,random<br>print(randow.ranint(‘a’,’b’,’c’))<br>time.sleep(2)<br>print(‘这是我的第一篇学习markdown语法的笔记。’)</p>
+<p><strong>显示结果：</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time,random</span><br><span class="line">print(randow.ranint(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>))</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">print(<span class="string">'这是我的第一篇学习markdown语法的笔记。'</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>4.代码块</strong></p>
+<p><strong>输入字符</strong></p>
+<p>`import time,random`插入一个单选的代码块</p>
+<p><strong>显示结果：</strong></p>
+<p><code>inport time,random</code>插入一个单选的代码块</p>
+<h2 id="2、标题"><a href="#2、标题" class="headerlink" title="2、标题"></a>2、标题</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 一级标题</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 二级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## 三级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">### 四级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#### 五级标题</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##### 六级标题</span></span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>#快捷键 “ctrl+shift+1”打开大纲</p>
+<h2 id="3-字体"><a href="#3-字体" class="headerlink" title="3.字体"></a>3.字体</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加粗</span></span><br><span class="line">**加粗**</span><br><span class="line"><span class="comment">// 代码高亮</span></span><br><span class="line">==代码高亮==</span><br><span class="line"><span class="comment">// 删除线</span></span><br><span class="line">~~删除线~~</span><br><span class="line"><span class="comment">// 斜体</span></span><br><span class="line">*斜体*</span><br><span class="line"><span class="comment">// 下划线</span></span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;（快捷键："ctrl+u"）</span><br></pre></td></tr></table></figure>
+
+<p><strong>加粗</strong></p>
+<p>==代码高亮==</p>
+<p><del>删除线</del></p>
+<p><em>斜体</em></p>
+<p><u>下划线</u>（快捷键：”ctrl+u”）</p>
+<p><strong>4.引用</strong></p>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引用语法</span></span><br><span class="line">&gt;这是最好的时代，</span><br><span class="line">&gt;&gt;也是最坏的时代;</span><br><span class="line">&gt;&gt;&gt;这是智慧的时代，</span><br><span class="line">&gt;&gt;&gt;&gt;这是愚蠢的时代;</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;这是一个信任的时期，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;这是一个怀疑的时期；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是一个光明的季节，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是一个黑暗的季节；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是希望之春，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是失望之冬；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们面前什么都有，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们面前什么也没有；</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们正踏上天堂之路，</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;人们正走向地狱之门。</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;-------《双城记》狄更斯</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<blockquote>
+<p>这是最好的时代，</p>
+<blockquote>
+<p>也是最坏的时代;</p>
+<blockquote>
+<p>——-《双城记》狄更斯</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5.分割线"></a>5.分割线</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 分割线</span></span><br><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<hr>
+<hr>
+<h2 id="6-图片插入"><a href="#6-图片插入" class="headerlink" title="6.图片插入"></a>6.图片插入</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在线图片</span></span><br><span class="line"><span class="comment">//本地图片</span></span><br><span class="line">![强大的python](https:<span class="comment">//timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1584506674976&amp;di=55224f21a66ec7476a88fb5f0759dfd0&amp;imgtype=0&amp;src=http%3A%2F%2Fspider.nosdn.127.net%2F733b6046dc3d8a4a93e359d14d87bce9.jpeg)</span></span><br><span class="line">![<span class="number">2018.1</span>于龙回头](C:\Users\Administrator\Pictures\pic\<span class="number">2018_01</span>\<span class="number">20180118</span>_IMG_1608.JPG)</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584506674976&di=55224f21a66ec7476a88fb5f0759dfd0&imgtype=0&src=http%3A%2F%2Fspider.nosdn.127.net%2F733b6046dc3d8a4a93e359d14d87bce9.jpeg" alt="强大的python"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CPictures%5Cpic%5C2018_01%5C20180118_IMG_1608.JPG" alt="2018.1于龙回头"></p>
+<h2 id="7、超链接"><a href="#7、超链接" class="headerlink" title="7、超链接"></a>7、超链接</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 超链接语法</span></span><br><span class="line">[我的github地址](https:<span class="comment">//github.com/xyu100)</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><a href="https://github.com/xyu100" target="_blank" rel="noopener">我的github地址</a></p>
+<h2 id="8、列表"><a href="#8、列表" class="headerlink" title="8、列表"></a>8、列表</h2><p><strong>输入字符：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 无序列表</span></span><br><span class="line">- 目录<span class="number">1</span>（-可换成）</span><br><span class="line">- 目录<span class="number">2</span></span><br><span class="line">- 目录<span class="number">3</span>    </span><br><span class="line"><span class="comment">//有序列表</span></span><br><span class="line"><span class="number">1</span>. 目录<span class="number">1</span></span><br><span class="line"><span class="number">2</span>. 目录<span class="number">2</span></span><br><span class="line"><span class="number">3</span>. 目录<span class="number">3</span>   </span><br><span class="line"><span class="string">"右键单击，可插入复选框"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<ul>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3</li>
+</ul>
+<ol>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> </li>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h2 id="9、表格"><a href="#9、表格" class="headerlink" title="9、表格"></a>9、表格</h2><p><strong>输入字符：</strong></p>
+<p><em>快捷键：”ctrl+t”</em></p>
+<p><strong>显示结果：</strong></p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>科目</th>
+<th>成绩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>语言</td>
+<td>99</td>
+</tr>
+<tr>
+<td>李四</td>
+<td>数学</td>
+<td>100</td>
+</tr>
+<tr>
+<td>王五</td>
+<td>英语</td>
+<td>99</td>
+</tr>
+</tbody></table>
+<h2 id="10-嵌入HTML标签"><a href="#10-嵌入HTML标签" class="headerlink" title="10.嵌入HTML标签"></a>10.嵌入HTML标签</h2><h3 id="10-1嵌入百度地图"><a href="#10-1嵌入百度地图" class="headerlink" title="10.1嵌入百度地图"></a>10.1嵌入百度地图</h3><p><strong>实现步骤：</strong></p>
+<p>百度地图API地址</p>
+<p><a href="http://api.map.baidu.com/lbsapi/creatmap/index.html" target="_blank" rel="noopener">http://api.map.baidu.com/lbsapi/creatmap/index.html</a></p>
+<ol>
+<li><p>先在百度API上获取想要的地图位置，</p>
+</li>
+<li><p>然后点“获取代码”按钮，</p>
+</li>
+<li><p>弹出窗口，把代码复制下来，</p>
+</li>
+<li><p>在本地创建一个XXX.html文件，把刚才复制的代码粘贴进去，保存好，</p>
+</li>
+<li><p>编辑XXX.thml文件,在</p>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+
+</li>
+</ol>
+<p>   下面插入一行<code>&lt;meta charset-&quot;UTF-8&quot; /&gt;</code>以防止产生乱码，</p>
+<ol start="6">
+<li>然后输入以下字符。</li>
+</ol>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">"D:\仰望星空\python学习\charts\国家大剧院.html"</span></span><br><span class="line">width=<span class="string">"600"</span>  </span><br><span class="line">height=<span class="string">"300"</span> </span><br><span class="line">frameborder=<span class="string">"0"</span></span><br><span class="line">scrolling=<span class="string">"no"</span> &gt;</span><br><span class="line">&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<iframe src="D:\仰望星空\python学习\charts\国家大剧院.html"
+
+
+<h3 id="10-2嵌入视频"><a href="#10-2嵌入视频" class="headerlink" title="10.2嵌入视频"></a>10.2嵌入视频</h3><h3 id="10-2-1嵌入网络视频"><a href="#10-2-1嵌入网络视频" class="headerlink" title="10.2.1嵌入网络视频"></a>10.2.1嵌入网络视频</h3><p><strong>实现步骤：</strong></p>
+<ol>
+<li>先在视频网站上找到想嵌入的视频，</li>
+<li>然后点“分享”按钮，复制”嵌入代码”，</li>
+<li>在markdown里直接粘贴代码即可，</li>
+<li>最后设置一下视频的高度和宽度（weigh=”  “ height=”  “）</li>
+</ol>
+<p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">"//player.bilibili.com/player.html?aid=56280445&amp;cid=98358325&amp;page=1"</span> scrolling=<span class="string">"no"</span> border=<span class="string">"0"</span> frameborder=<span class="string">"no"</span> framespacing=<span class="string">"0"</span> allowfullscreen=<span class="string">"true"</span></span><br><span class="line">width="600" height="300"&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong></p>
+<p><strong>视频1：衰落、复兴！世界各国GDP历史排名</strong></p>
+<iframe src="//player.bilibili.com/player.html?aid=56280445&cid=98358325&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+width="600" height="600"> </iframe>
+
+
+<h3 id="10-1-2嵌入本地视频"><a href="#10-1-2嵌入本地视频" class="headerlink" title="10.1.2嵌入本地视频"></a>10.1.2嵌入本地视频</h3><p><strong>输入字符：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;video id=<span class="string">"video"</span> controls=<span class="string">""</span> preload=<span class="string">"none"</span>&gt;</span><br><span class="line">    &lt;source id=<span class="string">"mp4"</span> src=<span class="string">"E:\迅雷下载\揭秘剑桥大学博士的24小时黄金作息.mp4"</span> type=<span class="string">"video/mp4"</span>&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>显示结果：</strong>        </p>
+<p><strong>视频2：揭秘剑桥大学博士的24小时黄金作息</strong>                                                                                                            </p>
+<video id="video" controls="" preload="none">
+    <source id="mp4" src="E:\迅雷下载\揭秘剑桥大学博士的24小时黄金作息.mp4" type="video/mp4">
+</video>
+
+<h3 id="10-1-3嵌入其他网页代码"><a href="#10-1-3嵌入其他网页代码" class="headerlink" title="10.1.3嵌入其他网页代码"></a>10.1.3嵌入其他网页代码</h3><p>可以复制微信公众号或者其他网页的代码直接粘贴进markdown里，以实现其界面风格。</p>
+<iframe src="D:\仰望星空\python学习\charts\水滴球图.html"
+frameborder="0"
+scrolling="no" 
+width="800" height="400">
+</iframe>
+
+
+
+
+<p>2020.3.18 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/20/my-new-md/" data-id="ck7zt9it40000cwnu5s324g2d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-github-learing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/20/github-learing/" class="article-date">
+  <time datetime="2020-03-20T06:30:31.000Z" itemprop="datePublished">2020-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/20/github-learing/">学习如何使用Github和Git</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="学习如何使用Github和Git"><a href="#学习如何使用Github和Git" class="headerlink" title="学习如何使用Github和Git"></a>学习如何使用Github和Git</h1><h2 id="一、关于Github"><a href="#一、关于Github" class="headerlink" title="一、关于Github"></a>一、关于Github</h2><h3 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h3><ul>
+<li><p><strong>仓库（Repository）</strong></p>
+<p>即项目的意思，想在github上开源一个项目，就必须要新建一个Reponsitory，仓库用来存放项目代码，每个仓库存放一个项目。</p>
+</li>
+<li><p><strong>收藏（Star）</strong></p>
+<p>仓库主页Star按钮，意思是收藏项目的人数，收藏别人的项目是需要进入他人的项目主页。</p>
+<p>![your stars](D:\仰望星空\Github\your stars.jpg)</p>
+</li>
+<li><p><strong>复制or克隆项目（Fork）</strong></p>
+<p>即项目的分支（源于开源），最后可将分支合并拉取，并能看到每个分支的情况，比如代码修改量、修改人、修改时间等。fork后在分支方会产生一个与主项目<strong>相同的独立</strong>项目，但是主项目发生变化时，分支项目不变化。</p>
+</li>
+<li><p><strong>发起请求（Pull Ruquest）</strong></p>
+<p>基于fork的项目分支作了改进后，想把改进合并到主项目里，就需要发起请求（Pull Request），主项目主收到请求后会review分支的代码，测试觉得OK后，会接受这个PR，就会把分支合到主项目里。</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgithub%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg" alt="一图说明上述概念"></p>
+<p><strong>发起新的pull ruquest请求：</strong></p>
+<p>![pull request](D:\仰望星空\Github\pull request.jpg)</p>
+</li>
+<li><p><strong>关注（Watch）</strong></p>
+<p>Watch的项目如果有斜体更新，都会第一时间收到关于该项目的通知提醒。</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch.jpg" alt="watch"></p>
+<p>当被关注的人的项目有变化时：</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cwatch%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%8F%98%E5%8C%96.jpg" alt="watch项目变化"></p>
+</li>
+</ul>
+<ul>
+<li><p><strong>事务卡片（Issue）</strong></p>
+<p>发现代码Bug，或有其他测试问题需要讨论时用。</p>
+</li>
+<li><p><strong>Github主页</strong></p>
+<p>该页左侧主要显示用户动态以及关注用户或关注仓库的动态，右侧显示所有的git库。</p>
+</li>
+<li><p><strong>仓库主页</strong></p>
+<p>主要显示项目的信息，如项目代码、版本、收藏/关注/fork情况等。</p>
+</li>
+<li><p><strong>个人主页**</strong></p>
+<p>个人信息等。</p>
+</li>
+</ul>
+<h3 id="2、注册-sign-up-及登录-sign-in-github帐号"><a href="#2、注册-sign-up-及登录-sign-in-github帐号" class="headerlink" title="2、注册(sign up)及登录(sign in)github帐号"></a>2、注册(<code>sign up</code>)及登录(<code>sign in</code>)github帐号</h3><p><a href="github.com">github官方网址</a></p>
+<p><strong>邮箱非常重要，需要接收邮件！</strong></p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>github服务器在国外，有访问太慢或无法访问时需要 科学。</li>
+<li>github search (google helper、ssr等)。</li>
+<li>私有仓库只能自己或指定的朋友才有权操作（但是收费，所说github被微软收购后私有仓库也免费了）。</li>
+<li>QQ邮箱需要设置白名单才可以收到确认邮件。</li>
+</ol>
+<h3 id="3、创建仓库"><a href="#3、创建仓库" class="headerlink" title="3、创建仓库"></a>3、创建仓库</h3><ul>
+<li>一个仓库对应一个开源项目</li>
+<li>通过git管理这个库</li>
+</ul>
+<ol>
+<li>仓库名称 Repository name（一般使用英文，并使用项目名称）</li>
+<li>项目描述 Description(option可用中文)</li>
+<li>创建一个Readme文件 Initialize this repository with a README（需要用markdown）</li>
+</ol>
+<ul>
+<li><p>项目主页里可以<code>Edit</code>项目描述</p>
+</li>
+<li><p><code>Create new file</code>创建文件</p>
+</li>
+<li><p><code>Upload files</code>上传文件</p>
+</li>
+<li><p><code>Find file</code>搜索文件</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E4%BB%93%E5%BA%93%E4%B8%BB%E9%A1%B5.jpg" alt="仓库主页说明"></p>
+</li>
+</ul>
+<h3 id="4、仓库管理"><a href="#4、仓库管理" class="headerlink" title="4、仓库管理"></a>4、仓库管理</h3><ul>
+<li><p><strong>创建新文件（creat new file）</strong></p>
+<ul>
+<li>起名\写代码\Commit new file写说明和详细说明</li>
+<li>preview预览</li>
+</ul>
+</li>
+<li><p>上传新文件（upload files）支持选择和拖曳文件</p>
+</li>
+<li><p>查找文件（<strong>支持即输即显</strong>）</p>
+</li>
+<li><p>编辑文件</p>
+</li>
+<li><p>删除文件（信息可以在commits里查看）</p>
+</li>
+<li><p><strong>commits显示对文件的处理次数</strong></p>
+</li>
+<li><p>下载/检出项目（clone or download，git下载用内部的地址）</p>
+</li>
+</ul>
+<h3 id="5、Github-Issues"><a href="#5、Github-Issues" class="headerlink" title="5、Github Issues"></a>5、Github Issues</h3><p>  ![new issues](D:\仰望星空\Github\new issue.jpg)</p>
+<hr>
+<hr>
+<p>  ![创建新的issues](D:\仰望星空\Github\creat new issues.jpg)</p>
+<ul>
+<li>对issues项目主和分支主<strong>都可关闭</strong></li>
+</ul>
+<hr>
+<h3 id="6、开源项目贡献流程"><a href="#6、开源项目贡献流程" class="headerlink" title="6、开源项目贡献流程"></a>6、开源项目贡献流程</h3><ol>
+<li><p>方式1：新建Issue</p>
+<p>对项目主提交使用问题或建议和想法。</p>
+</li>
+<li><p>方式2：Pull Request</p>
+<p>直接修改、完善主项目的代码。</p>
+<ul>
+<li>fork项目</li>
+<li>修改自己仓库的项目代码</li>
+<li>新建Pull Ruquest</li>
+<li>等待项目主审核</li>
+</ul>
+</li>
+</ol>
+<h2 id="二、学习Git"><a href="#二、学习Git" class="headerlink" title="二、学习Git"></a>二、学习Git</h2><h3 id="1、目的："><a href="#1、目的：" class="headerlink" title="1、目的："></a>1、目的：</h3><p>通过Git管理Github托管项目代码</p>
+<h3 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h3><ol>
+<li><p>官网下载：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E4%B8%8B%E8%BD%BD.png" alt="git下载"></p>
+</li>
+<li><p>安装：</p>
+<ul>
+<li>Git Bash Here:命令行模式</li>
+<li>Git GUI Here:图文界面模式</li>
+<li>Use Git from Git Bash only:选择使用命令行模式</li>
+</ul>
+</li>
+</ol>
+<h3 id="3、Git工作流程"><a href="#3、Git工作流程" class="headerlink" title="3、Git工作流程"></a>3、Git工作流程</h3><h3 id="4、Git初始化及仓库创建和操作"><a href="#4、Git初始化及仓库创建和操作" class="headerlink" title="4、Git初始化及仓库创建和操作"></a>4、Git初始化及仓库创建和操作</h3><ol>
+<li><p><strong>基本信息设置</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：在主文件夹(例如new)里右击，然后点击Git Bash Here进入命令行模式</span></span><br><span class="line"><span class="comment">//第2步：设置用户名</span></span><br><span class="line">git config --global user.name <span class="string">'github的用户名'</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//第3步：设置用户邮箱</span></span><br><span class="line">git config --global user.email <span class="string">'XXX@XXX.com'</span></span><br><span class="line"><span class="comment">//以上的设置会在github主页显示信息</span></span><br><span class="line"><span class="comment">//如果选择Git GUI Here即进入图形化界面模式</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p><strong>初始化一个新的Git仓库</strong></p>
+<ul>
+<li><p>在主文件夹new里<strong>创建新的文件夹</strong>，例如命名为test</p>
+</li>
+<li><p><code>cd test\git init</code>或者在test文件夹上右击选择“Git 在这里创建版本库”<strong>完成初始化</strong>之后，会在test文件夹下生成一个.git的隐藏文件。</p>
+<p>​    <img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6.png" alt=""></p>
+</li>
+</ul>
+<ol start="3">
+<li><p><strong>向仓库中添加文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：先在工作区里创建文件</span></span><br><span class="line"><span class="comment">//命令行模式</span></span><br><span class="line">touch XXX.XX  <span class="comment">//新建一个文件</span></span><br><span class="line"><span class="comment">//窗口模式，使用用传统windows操作模式</span></span><br><span class="line"><span class="comment">//可以先查看文件状态</span></span><br><span class="line">git status</span><br><span class="line"><span class="comment">//第2步：从工作区向暂存区添加文件</span></span><br><span class="line">git add XXX.XX</span><br><span class="line"><span class="comment">//这时用git status命令查看文件状态，就会看到文件状态和颜色会发生变化     </span></span><br><span class="line">git status</span><br><span class="line"><span class="comment">//第3步：从暂存区向仓库添加文件</span></span><br><span class="line">git commit -m<span class="string">"提交描述"</span></span><br><span class="line"><span class="comment">//再查看文件状态</span></span><br><span class="line">git status <span class="comment">//这时会发现nothing to commit,working directory clean</span></span><br></pre></td></tr></table></figure>
+
+<p>4.<strong>修改文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第1步：修改文件需要键入下列命令</span></span><br><span class="line">vi XXX.XX  #或者vim XXX.XX</span><br><span class="line"><span class="comment">//或者在网页上直接修改，修改后用下面的命令就能查看文件里的代码</span></span><br><span class="line">cat XXX.XX</span><br><span class="line"><span class="comment">//这里再用git status命令查看就会发现</span></span><br><span class="line"><span class="comment">//modified XXX.XX (表示文件被修改过了)</span></span><br><span class="line"><span class="comment">//第2步：再把修改过的文件添加到仓库里就可以了</span></span><br><span class="line">git commit -m<span class="string">"描述"</span></span><br></pre></td></tr></table></figure>
+
+<p>5.<strong>删除文件</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：删除workshop工作区的文件,用命令行模式如下，或者在电脑里直接删除</span></span><br><span class="line">rm -rf XXX.XX</span><br><span class="line"><span class="comment">//第2步：从暂存区删除文件，方式同上</span></span><br><span class="line">git rm XXX.XX</span><br><span class="line"><span class="comment">//第3步：提交操作，同上</span></span><br><span class="line">git commit -m<span class="string">"描述"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这5个动作用一张图表示就是下面这样的 ：</strong></p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%B5%81%E7%A8%8B.png" alt="git流程"></p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="5-Git管理远程仓库"><a href="#5-Git管理远程仓库" class="headerlink" title="5.Git管理远程仓库"></a>5.Git管理远程仓库</h3><p><strong>使用远程仓库github的目的</strong></p>
+<p>作用：备份、实现代码共享集中化管理</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5Cgit%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt=""></p>
+<h4 id="1-将本地仓库同步到远端（github）仓库"><a href="#1-将本地仓库同步到远端（github）仓库" class="headerlink" title="1. 将本地仓库同步到远端（github）仓库"></a>1. 将本地仓库同步到远端（github）仓库</h4><p>​    <strong>1.代码方法</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用命令完成提交</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>​    <strong>2.图形化界面方法</strong></p>
+<p>​    略。</p>
+<h4 id="2-Git克隆操作"><a href="#2-Git克隆操作" class="headerlink" title="2. Git克隆操作"></a>2. Git克隆操作</h4><p><strong>目的</strong></p>
+<p>将远程仓库（github对应的项目）复制/克隆到本地</p>
+<p>​    <strong>方式1、图形化界面操作</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//到github项目的主页里下载</span></span><br></pre></td></tr></table></figure>
+
+<p>![clone or download](D:\仰望星空\Github\clone or download.jpg)</p>
+<p>​    <strong>方式2：代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第1步：复制项目的地址，见下图</span></span><br></pre></td></tr></table></figure>
+
+<p>![clone or download1](D:\仰望星空\Github\clone or download1.jpg)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第2步：输入代码完成克隆</span></span><br><span class="line">git clone <span class="string">'刚才复制的地址粘贴到这里，注意按右键才能粘贴'</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-解决git-push-报错或提示没有权限问题"><a href="#3-解决git-push-报错或提示没有权限问题" class="headerlink" title="3. 解决git push 报错或提示没有权限问题"></a>3. 解决git push 报错或提示没有权限问题</h4><p><strong>错误提示：The requested URl returned error:403 Forbidden while accessing</strong></p>
+<p>这是因为：私有项目，没有权限，输入用户名和密码，或者远程地址采用这种类型。</p>
+<p><strong>解决方法：</strong></p>
+<pre><code>1. 代码方法</code></pre><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi.git/config <span class="comment">//重新初始化</span></span><br><span class="line"><span class="comment">//把[remote"origin"]url=https://github.com/用户名/仓库名.git</span></span><br><span class="line"><span class="comment">//修改为</span></span><br><span class="line"><span class="comment">//[remote"origin"]url=用户名:密码@github.com/用户名/仓库名.git</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>图形化界面方法</p>
+<p>第1步：进入.git这个隐藏文件夹里</p>
+<p>第2步：用记事本打开config文件</p>
+<p>第3步：按代码方法的字符修改</p>
+</li>
+</ol>
+<h3 id="6-使用Github-Pages搭建个人网站"><a href="#6-使用Github-Pages搭建个人网站" class="headerlink" title="6.使用Github Pages搭建个人网站"></a>6.使用Github Pages搭建个人网站</h3><h4 id="6-1个人站点"><a href="#6-1个人站点" class="headerlink" title="6.1个人站点"></a>6.1个人站点</h4><ol>
+<li><p><strong>搭建</strong></p>
+<p><strong>第1步</strong>：来到自己的github主页</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%99.jpg" alt="建站"></p>
+<p><strong>第2步</strong>：新建仓库</p>
+<p>​    这一步没有截图，<strong>注意</strong>：仓库名必须是<strong>用户名.github.io</strong>，<strong>而且</strong>不要写<code>readme</code>文件，直接creat即可。</p>
+<p><strong>第3步</strong>：在仓库下新建index.html的文件</p>
+<p>出现大量的提示信息，别慌，点creating a new file，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%991.jpg" alt="建站1"></p>
+<p>新文件命名为index.html，在代码区里先随便写点什么，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%992.jpg" alt="建站2"></p>
+<p>描述栏里如图写上init，</p>
+<p><img src="D:%5C%E4%BB%B0%E6%9C%9B%E6%98%9F%E7%A9%BA%5CGithub%5C%E5%BB%BA%E7%AB%993.jpg" alt="建站3"></p>
+</li>
+</ol>
+<ol start="2">
+<li><strong>访问**</strong></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问地址</span></span><br><span class="line">https:<span class="comment">//用户名.github.io</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>注意：</strong><ul>
+<li>github pages只支持静态网页；</li>
+<li>.io仓库里只能放html文件.</li>
+</ul>
+</li>
+</ol>
+<h4 id="6-2Project-Pages项目站点"><a href="#6-2Project-Pages项目站点" class="headerlink" title="6.2Project Pages项目站点"></a>6.2Project Pages项目站点</h4><p>可以利用项目仓库里的settings\Launch automatic page generator来创建美观的项目站点，这里就不介绍了。</p>
+<p>​                                                                                                                                2020.3.19</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/20/github-learing/" data-id="ck7zttnyh0000t8nu5m0r8msl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/20/hello-world/" class="article-date">
@@ -142,6 +614,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/03/20/my-new-md/">Markdown快速入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/20/github-learing/">学习如何使用Github和Git</a>
+          </li>
         
           <li>
             <a href="/2020/03/20/hello-world/">Hello World</a>
